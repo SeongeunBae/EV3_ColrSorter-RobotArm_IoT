@@ -1,0 +1,14 @@
+This uses IBM Cloud.
+
+Pharmaceutical sorting plant Describe how it works
+Machine: Color Sorter, Robot Arm1. 
+1. Recognize the color of block by color sensor of color sorter
+2. . Put up to 8 blocks(maximum) into the sorter and operate 
+3. Sort blocks into boxes by color 
+4. Color Sorter converts the color and count data of a block into JSON Publish to IBM cloud
+5. The robotic arm subscribes to that JSON data in the IBM cloud, Find boxes with 3 or more blocks and register them
+6. Publish data to IBM cloud for colors taken and inventory
+7. Drop a new box into an empty space
+8. Color sorter receives JSON data from IBM cloud
+  It reflects the number of blocks in real time.
+9. Repeat 5 to 8 times while there are boxes with 3 or more blocks
